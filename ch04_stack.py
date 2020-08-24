@@ -39,7 +39,7 @@ print(stack.items)
 # Reverse String
 reverso = Stack()
 
-for c in "Hello":
+for c in "yesterday":
     reverso.push(c)
 
 reversed_String = ""
@@ -47,3 +47,9 @@ for s in range(len(reverso.items)):
     reversed_String += reverso.pop()
 
 print(reversed_String)
+
+# Reverse List
+input_list = [1, 2, 3, 4, 5]
+
+
+
