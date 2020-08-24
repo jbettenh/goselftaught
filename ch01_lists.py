@@ -1,4 +1,4 @@
-""" Strings and Lists are Iterable. Lists are mutable. """
+""" Lists [] are Iterable. Lists are mutable. """
 
 fruit = list()
 print(fruit)
@@ -28,3 +28,13 @@ print(colors)
 
 if "red" in colors:
     print("Found red")
+
+# Lists in a tuple
+eights = ["Edgar Allan Poe", "Charles Dickens"]
+
+nines = ["Hemingway", "Fitzgerald", "Orwell", "Sinclair"]
+
+authors = (eights, nines)
+print(authors)
+print(authors[0])
+print(authors[1][3])
