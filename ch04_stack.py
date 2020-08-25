@@ -48,8 +48,23 @@ for s in range(len(reverso.items)):
 
 print(reversed_String)
 
-# Reverse List
-input_list = [1, 2, 3, 4, 5]
+# Reverse List, Use a stack to create a new list with the items in the following list reversed: [1, 2, 3, 4, 5].
+dirty_dishes = [1, 2, 3, 4, 5]
+clean_dishes = []
+
+dishes = Stack()
+
+for item in dirty_dishes:
+    dishes.push(item)
+
+print(dishes.items)
+
+for item in range(len(dishes.items)):
+    clean_dishes.append(dishes.pop())
+
+print(clean_dishes)
+
+
 
 
 
