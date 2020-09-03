@@ -41,6 +41,10 @@ class LinkedList:
             node = node.next
         print("\n")
 
+7
+
+
+
 
 
 

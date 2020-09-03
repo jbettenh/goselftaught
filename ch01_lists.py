@@ -29,6 +29,9 @@ print(colors)
 if "red" in colors:
     print("Found red")
 
+# Slice list
+print(f"Sliced list: {colors[0:2]}")
+
 # Lists in a tuple
 eights = ["Edgar Allan Poe", "Charles Dickens"]
 
