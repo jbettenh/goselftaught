@@ -20,18 +20,39 @@ class Shape:
         self.width = w
         self.length = l
 
+    def what_am_i(self):
+        print("I am a shape!")
+
     def area(self):
         return self.width * self.length
 
     def print_size(self):
         print("""{} by {}""".format(self.width, self.length))
 
+    def calculate_perimeter(self):
+       print(2 * self.width + 2 * self.length)
+
+
 class Rectangle(Shape):
    pass
 
+
 class Square(Shape):
-    pass
+    def change_size(self, amt):
+        if amt >= 0:
+            self.width = self.width + amt
+            self.length = self.length + amt
+        else:
+            self.width = self.width + amt
+            self.length = self.length + amt
 
 
-a_rectangle = Rectangle(10,5)
+
+a_rectangle = Rectangle(10, 5)
 a_rectangle.print_size()
+a_rectangle.calculate_perimeter()
+
+a_square = Square(2, 2)
+a_square.print_size()
+a_square.change_size(-1)
+a_square.print_size()
