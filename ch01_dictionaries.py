@@ -21,3 +21,15 @@ ny = {"location": (40.7128, 74.0059),
       "celebs": ["W. Allen", "Jay Z", "K. Bacon"],
       "facts": {"state": "NY", "country": "USA"}}
 print(ny)
+
+
+my_stats = {"height": 178,
+            "weight": 86,
+            "color": "blue",
+            "band": "Tool"}
+
+question = input("What do you want to know?")
+
+if question in my_stats:
+    result = my_stats[question]
+    print(result)

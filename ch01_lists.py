@@ -42,4 +42,14 @@ print(authors)
 print(authors[0])
 print(authors[1][3])
 
+# Bands
+my_bands = ["Tool", "Led Zeppllin", "Nirvana", "Twenty One Pilots", "Beatles"]
+print(my_bands)
+
+my_bands[4] = "John Lennon"
+print(f'Here ar my new favorite bands: {my_bands}')
+
+my_bands.append("Of Monsters and Men")
+print(f'Oh, I forgot, {my_bands[5]}')
+
 
