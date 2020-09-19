@@ -19,10 +19,7 @@ print(writer)
 jump = """I jumped over the puddle. It was 12 feet!""".split(".")
 print(jump)
 
-# Join with space
-words = ["The", "fox", "jumped", "over", "the", "fence."]
-my_sentence = " ".join(words)
-print(my_sentence)
+
 
 # Strip the white space
 s = "  The   "
@@ -91,3 +88,29 @@ author = "Hemingway".index("m")
 print(author)
 
 
+# Strings II
+"""
+1.  Find dialogue in your favorite book (containing quotes) and turn it into a string.
+"""
+red = "\"Remember that hope is a good thing, Red, maybe the best of things, and no good thing ever dies.\""
+
+
+"""
+2. Slice the string "It was a bright cold day in April, and the clocks were striking thirteen." to only include the 
+characters before the comma
+"""
+quote = "It was a bright cold day in April, and the clocks were striking thirteen."
+index = quote.index(",")
+main = quote[:index] + "."
+print(main)
+
+
+"""
+3. Take the list ["The", "fox", "jumped", "over", "the", "fence", "."] and turn it into a grammatically correct string.
+There should be a space between each word, but no space between the word fence and the period that follows it. 
+(Don't forget, you learned a method that turns a list of strings into a single string.)
+"""
+# Join with space
+words = ["The", "fox", "jumped", "over", "the", "fence."]
+my_sentence = " ".join(words)
+print(my_sentence)
