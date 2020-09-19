@@ -8,7 +8,7 @@ import csv
 
 movies = [["Top Gun", "Risky Business", "Minority Report"],["Titanic", "The Revenant", "Inception"],["Training Day", "Man on Fire", "Flight"]]
 
-with open("D:\code\python3\goselftaught\movies.csv", "w") as csvfile:
+with open("D:\code\python3\goselftaught\movies.csv", "w", newline='') as csvfile:
     spamwriter = csv.writer(csvfile, delimiter=",")
     for movie in movies:
         spamwriter.writerow(movie)
