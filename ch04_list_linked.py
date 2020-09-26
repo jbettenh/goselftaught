@@ -41,12 +41,6 @@ class LinkedList:
             node = node.next
         print("\n")
 
-7
-
-
-
-
-
 
 # Create random number list
 the_list = LinkedList()
