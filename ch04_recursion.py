@@ -43,7 +43,7 @@ print_to_zero(5)
 """
 
 
-def parabola(n, t, f1, f2):
+def parabola(t, n, f1, f2):
     if n == t:
         return
     else:
@@ -52,11 +52,11 @@ def parabola(n, t, f1, f2):
         f1 = f2
         f2 = fibonacci
         n += 1
-        parabola(n, t, f1, f2)
+        parabola(t, n, f1, f2)
 
 
-print('Fibonacci')
-parabola(2, 9, 0, 1)
+print('--- Fibonacci ---')
+parabola(9, 2, 0, 1)
 
 
 
